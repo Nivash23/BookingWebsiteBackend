@@ -30,7 +30,8 @@ GoogleRouter.post('/googlelog/', async (req, res) => {
     }
     else {
         res.status(200).json({
-            message:"User login Successfully..."
+            message:"login Successfully...",
+            loguser:logUser,
         })
     }
 })
